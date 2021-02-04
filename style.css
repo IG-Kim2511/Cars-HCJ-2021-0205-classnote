@@ -14,20 +14,20 @@
 html {
   font-size: 62.5%;
 
-  /* ⭐css 027, 스크롤 smooth하게 하기 */
+  /* ⚡css 027, 스크롤 smooth하게 하기 */
   scroll-behavior: smooth;
 }
 
 body {
   background-color: #ccc;
-  padding-right: 3rem
+  padding-right: 3rem;
 }
 
 /* @ menu */
 .menu {
   width: 4rem;
   height: 4rem;
-  background-color: red;
+
   position: fixed;
   top: 2rem;
 
@@ -37,14 +37,43 @@ body {
   left: 2rem;
 
   /* js 019 */
-  transition: left 0.5s;
+  transition: all 0.5s;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
 
   z-index: 10;
 }
 
 /* js 019  */
-.menu.change{
-    left: 15vw;
+.menu.change {
+  left: 15vw;
+
+  /* css 030 click btn and trasform 'X'shape */
+  transform: rotate(45deg);
+}
+
+.menu-line {
+  width: 100%;
+  height: 0.2rem;
+  background-color: #fff;
+  margin: 0.3rem 0;
+  box-shadow: 0.1rem 0.1rem 0.3rem #222;
+
+  /* css 030  */
+  transition: all 0.5s;
+}
+
+/* css 030 click btn and trasform 'X'shape */
+.change .menu-line-1 {
+  transform: rotate(270deg) translateX(-0.4rem);
+}
+.change .menu-line-2 {
+  transform: rotate(360deg) translateY(-0.4rem);
 }
 
 /* @ navbar */
@@ -61,7 +90,7 @@ body {
   /* js 019
   left: 0; */
   left: -15vw;
-  
+
   /* js 019 */
   transition: left 0.5s;
 
@@ -75,17 +104,25 @@ body {
 }
 
 /* js 019  */
-.navbar.change{
-    left: 0;
+.navbar.change {
+  left: 0;
 }
 
-.navbar-link{
-    font-size: 1.5rem;
-    margin: 2rem 0;
+.navbar-link {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 2rem 0;
+  color: #777;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+
+  transition: all 0.3s ease;    /* CSS 033 */
 }
 
-
-
+.navbar-link:hover {    /* CSS 033 */
+  color: #111;
+  transform: scale(1.1);
+}
 
 /* @ common section styles */
 
@@ -105,15 +142,15 @@ section {
   /* js 019
   left: 15vw; */
   left: 0;
-  
+
   /* js 019 */
   /* transition안에 transform 추가 */
-  transition: left 0.5s ,transform 0.5s;
+  transition: left 0.5s, transform 0.5s;
 
   margin-bottom: 3rem;
 
   /* css 017
-   ⭐perspective & transform 3d
+   ⚡perspective & transform 3d
 
     To activate 3D space, an element needs perspective.
 
@@ -137,7 +174,7 @@ section {
 }
 
 /* js 019  */
-section.change{
-    left: 15vw;
-    transform: rotateY(10deg);
+section.change {
+  left: 15vw;
+  transform: rotateY(10deg);
 }

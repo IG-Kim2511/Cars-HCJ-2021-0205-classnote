@@ -1,5 +1,5 @@
 
-// js 019 
+// js 019 ,css 030
 // click menu btn and show menu
 // html with '.target' in [menu, navbar, section] ....put '.change' class in there
 
