@@ -13,6 +13,9 @@
 
 html {
   font-size: 62.5%;
+
+  /* ⭐css 027, 스크롤 smooth하게 하기 */
+  scroll-behavior: smooth;
 }
 
 body {
@@ -75,6 +78,15 @@ body {
 .navbar.change{
     left: 0;
 }
+
+.navbar-link{
+    font-size: 1.5rem;
+    margin: 2rem 0;
+}
+
+
+
+
 /* @ common section styles */
 
 .wrapper {
@@ -101,7 +113,7 @@ section {
   margin-bottom: 3rem;
 
   /* css 017
-  🍉 perspective & transform 3d
+   ⭐perspective & transform 3d
 
     To activate 3D space, an element needs perspective.
 
