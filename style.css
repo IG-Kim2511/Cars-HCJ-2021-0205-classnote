@@ -1,21 +1,82 @@
 /* @common Styles */
 
-*{
-    margin: 0;
-    padding: 0;
-    outline: none;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style-type: none;
-    font-family: "Special Elite",cursive;
-    font-weight: 400;
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Special Elite", cursive;
+  font-weight: 400;
 }
 
-html{
-    font-size: 62.5%;
-
+html {
+  font-size: 62.5%;
 }
 
-body{
-    background-color: #ccc;
+body {
+  background-color: #ccc;
+}
+
+/* @ menu */
+.menu {
+  width: 4rem;
+  height: 4rem;
+  background-color: red;
+  position: fixed;
+  top: 2rem;
+  left: 15vw; /* css 014 : navbar width에 맞춰서 넣음 */
+
+  z-index: 10;
+}
+
+/* @ navbar */
+
+/* js */
+
+.navbar {
+  width: 15vw; /* css 014 */
+  height: 100vh;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 4rem 0 0 4rem;
+}
+
+/* @ common section styles */
+
+.wrapper {
+  width: 100%;
+
+  perspective: 50rem; /* css 017  */
+}
+
+section {
+  width: 85vw;
+  height: 100vh;
+  background-color: #efefef;
+
+  position: relative;
+  left: 15vw;
+  margin-bottom: 3rem;
+
+  /* css 017
+  🍉 perspective & transform 3d
+
+    To activate 3D space, an element needs perspective.
+
+    https://3dtransforms.desandro.com/perspective
+    
+   w1) 한번에 붙여서 
+    transform: perspective(50rem) rotateY(10deg); 
+   
+   w2) 부모 태그와 나누어서  */
+
+  transform: rotateY(10deg);
 }
