@@ -36,6 +36,11 @@ body {
   z-index: 10;
 }
 
+/* js 019  */
+.menu.change{
+    left: 15vw;
+}
+
 /* @ navbar */
 
 /* js */
@@ -60,6 +65,10 @@ body {
   z-index: 10;
 }
 
+/* js 019  */
+.navbar.change{
+    left: 0;
+}
 /* @ common section styles */
 
 .wrapper {
@@ -103,4 +112,11 @@ section {
   transform-origin: left;
 
   box-shadow: 0.5rem 0.5rem 1rem #aaa; /* css 019 */
+}
+
+/* js 019  */
+section.change{
+    left: 15vw;
+
+    transform: rotateY(10deg);
 }
