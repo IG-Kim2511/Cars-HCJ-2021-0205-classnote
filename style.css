@@ -33,6 +33,9 @@ body {
   left: 15vw;   */
   left: 2rem;
 
+  /* js 019 */
+  transition: left 0.5s;
+
   z-index: 10;
 }
 
@@ -55,6 +58,9 @@ body {
   /* js 019
   left: 0; */
   left: -15vw;
+  
+  /* js 019 */
+  transition: left 0.5s;
 
   display: flex;
   flex-direction: column;
@@ -87,6 +93,10 @@ section {
   /* js 019
   left: 15vw; */
   left: 0;
+  
+  /* js 019 */
+  /* transition안에 transform 추가 */
+  transition: left 0.5s ,transform 0.5s;
 
   margin-bottom: 3rem;
 
@@ -117,6 +127,5 @@ section {
 /* js 019  */
 section.change{
     left: 15vw;
-
     transform: rotateY(10deg);
 }
