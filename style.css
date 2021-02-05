@@ -209,7 +209,7 @@ section.change {
 .section-1-img {
   width: 70%;
 
-  /* img center정렬
+  /* img center정렬  
   https://www.freecodecamp.org/news/how-to-center-an-image-in-css/   */
   margin: 0 auto;
   display: block;
