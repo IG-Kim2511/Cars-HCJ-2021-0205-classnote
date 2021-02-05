@@ -214,3 +214,30 @@ section.change {
   margin: 0 auto;
   display: block;
 }
+
+/* @section 2 */
+.section-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.card {
+  width: 50rem;
+  margin: 0 3rem;
+  background-color: #fff;
+  padding: 1rem;
+  box-shadow: 0.6rem 0.6rem 0.6rem #bbb;
+
+  transition: all 0.5s; /* css 044 */
+}
+
+/* css 044 */
+.card:hover {
+  box-shadow: 1rem 1rem 2rem #bbb;
+  transform: scale(1.05);
+}
+
+.card-img {
+  width: 100%;
+}
