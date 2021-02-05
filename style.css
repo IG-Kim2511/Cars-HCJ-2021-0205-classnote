@@ -216,7 +216,7 @@ section.change {
 }
 
 /* @section 2 */
-.section-2 {  
+.section-2 {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -230,6 +230,8 @@ section.change {
   box-shadow: 0.6rem 0.6rem 0.6rem #bbb;
 
   transition: all 0.5s; /* css 044 */
+
+  position: relative;
 }
 
 /* css 044 */
@@ -237,7 +239,44 @@ section.change {
   box-shadow: 1rem 1rem 2rem #bbb;
   transform: scale(1.05);
 }
+.car-name {
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
 
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  z-index: 10;
+}
 .card-img {
   width: 100%;
+  opacity: 0.8;
+  transition: opacity 0.5s; /* css 045 항상 all할 필요없이, opacity로 지정해서 적용  */
+}
+
+/* css 045 card에 hover하면, .card-img에 적용 */
+.card:hover .card-img {
+  opacity: 1;
+}
+
+.car-price {
+  font-size: 1.8rem;
+  color: #777;
+  margin: 0.5rem 0;
+}
+
+.card-btn {
+  width: 100%;
+  background-color: #fff;
+  font-size: 1.7rem;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  border: none;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  color: #fff;
+  text-shadow: 0.1rem 0.1rem 0.3rem #000;
+  box-shadow: 0.1rem 0.1rem 0.5rem #bbb;
 }
