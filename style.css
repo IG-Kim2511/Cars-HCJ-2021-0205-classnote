@@ -280,3 +280,27 @@ section.change {
   text-shadow: 0.1rem 0.1rem 0.3rem #000;
   box-shadow: 0.1rem 0.1rem 0.5rem #bbb;
 }
+
+/* @ section 3 */
+
+.section-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #222;
+}
+.video {
+  width: 25%;
+  margin: 0 2rem;
+  border-radius: 0.5rem;
+
+  opacity: 0.5;
+  box-shadow: 0.3rem 0.3rem 0.5rem #111;
+
+  transition: all 1s;
+}
+
+.video:hover {
+  opacity: 1;
+  box-shadow: 1rem 1rem 1rem #bbb;
+}

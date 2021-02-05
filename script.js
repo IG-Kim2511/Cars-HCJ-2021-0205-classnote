@@ -22,3 +22,20 @@ document.querySelectorAll('.wrapper').forEach((item)=>{
     });
     })
 });
+
+
+//js 053
+// mouseover on video, and play video
+// mouseover, play() , mouseout , pause()
+
+const videos = document.querySelectorAll('.video');
+
+videos.forEach((video)=>{
+    video.addEventListener('mouseover',()=>{
+        video.play();
+    });
+
+    video.addEventListener('mouseout',()=>{
+        video.pause();
+    });
+});
