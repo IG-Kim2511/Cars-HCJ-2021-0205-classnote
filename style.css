@@ -358,7 +358,7 @@ section.change {
   transition: all 0.3s; /* css 106 */
 
   /* css 106 
-  transform이 bottom을 기준으로 되게 하기 : 보기에 더 좋음*/
+  bottom을 기준으로 transform 실행됨 : 보기에 더 좋음*/
   transform-origin: bottom;
 }
 
