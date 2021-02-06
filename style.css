@@ -31,7 +31,6 @@ body {
 
 /* @ menu */
 .menu {
-  
   width: 4rem;
   height: 4rem;
 
@@ -41,7 +40,7 @@ body {
   /* js 019
   css 014 : navbar width에 맞춰서 넣음
   left: 15vw;   */
-  left: 2rem;
+  right: 3vw;
 
   /* js 019 */
   transition: all 0.5s;
@@ -55,7 +54,7 @@ body {
 
 /* js 019  */
 .menu.change {
-  left: 15vw;
+  /* left: 15vw; */
 
   /* css 030 click btn and trasform 'X'shape */
   transform: rotate(45deg);
@@ -445,16 +444,50 @@ section.change {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-.contact-form .form-btn{
-  background-color: rgba(255,255,255,0.8);
+.contact-form .form-btn {
+  background-color: rgba(255, 255, 255, 0.8);
   font-weight: 600;
-  letter-spacing: .3rem;
+  letter-spacing: 0.3rem;
   color: #444;
   cursor: pointer;
 }
 
-.copyright{
+.copyright {
   font-size: 2rem;
   font-weight: 300;
   color: #fff;
+}
+
+/* @ responsive */
+@media (max-width: 1500px) {
+  .section-heading {
+    font-size: 7rem;
   }
+
+  .section-2 {
+    height: auto; /* css 123 , 해결*/
+    padding: 5rem 0 10rem 0;
+  }
+
+  .cards-wrapper {
+    /* css 123,  flex-wrap: wrap;
+  breakpoint에서 자동 줄바꿈
+  버그: 자동줄바꿈해서 세로정렬되면 이미지들의 높이가 화면보다 높아져서, 화면 밖으로 나감
+  */
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 40rem;
+    margin: 3rem;
+  }
+
+  .section-3 {
+    padding: 5rem 3rem;
+  }
+  .video {
+    width: 30%;
+    margin: 2rem;
+  }
+  
+}
