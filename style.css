@@ -464,8 +464,12 @@ section.change {
     font-size: 7rem;
   }
 
+  .section-1 {
+    height: 80vh;
+  }
   .section-2 {
-    height: auto; /* css 123 , 해결*/
+    /* css 123 , 화면밖으로 나가는 이미지 화면안으로 들어오게 해결*/
+    height: auto;
     padding: 5rem 0 10rem 0;
   }
 
@@ -482,6 +486,10 @@ section.change {
     margin: 3rem;
   }
 
+  .section-heading {
+    font-size: 6rem;
+  }
+
   .section-3 {
     padding: 5rem 3rem;
   }
@@ -489,5 +497,116 @@ section.change {
     width: 30%;
     margin: 2rem;
   }
-  
+
+  .section-4 {
+    height: auto;
+  }
+
+  .gallery {
+    margin: 12rem 0;
+  }
+
+  .gallery-shelf {
+    width: 90%;
+  }
+
+  .gallery img {
+    width: 20%;
+  }
+
+  .gallery-img-2,
+  .gallery-img-5 {
+    left: 25%;
+  }
+
+  .gallery-img-3,
+  .gallery-img-6 {
+    left: 75%;
+  }
+
+  .section-5 {
+    height: auto;
+  }
+
+  .contact-form {
+    width: 55rem;
+    height: 40rem;
+    padding: 2rem;
+  }
+}
+
+/* @ */
+@media (max-width: 1000px) {
+  .section-heading {
+    font-size: 4rem;
+  }
+  section {
+    height: 60vh;
+    padding: 2rem;
+  }
+
+  .section-3 {
+    /* ⚡ css 123 , 화면밖으로 나가는 이미지 화면안으로 들어오게 해결*/
+    height: auto;
+  }
+
+  .video-wrapper {
+    /* css 123 , column되면서 화면밖으로 이미지가 나가는 버그*/
+    flex-direction: column;
+  }
+  .video {
+    width: 70%;
+    margin: 3rem auto;
+  }
+}
+
+/* @ */
+
+@media (max-width: 750px) {
+  .navbar {
+    width: 30vw;
+    left: -30vw;
+  }
+
+  .menu.change {
+    left: 30vw;
+  }
+
+  section.change {
+    left: 30vw;
+    transform: rotateY(25deg);
+  }
+
+  .section-heading {
+    font-size: 5.5rem;
+  }
+
+  .section-4 {
+    padding: 6rem 0 1rem 0;
+  }
+
+  .gallery-shelf {
+    height: 1.5rem;
+    width: 95%;
+  }
+
+  .gallery-shelf::before {
+    height: 5rem;
+    top: -5rem;
+  }
+
+  .gallery img {
+    width: 25%;
+    bottom: 4rem;
+  }
+
+  .gallery-img-2,
+  .gallery-img-5 {
+    left: 22%;
+  }
+
+  .gallery-img-3,
+  .gallery-img-6 {
+    left: 78%;
+  }
 }
