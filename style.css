@@ -154,7 +154,19 @@ section {
 
   margin-bottom: 3rem;
 
-  /* css 017
+  /* transform-origin: left;
+  https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin */
+  transform-origin: left;
+
+  box-shadow: 0.5rem 0.5rem 1rem #aaa; /* css 019 */
+}
+
+/* js 019  */
+section.change {
+  left: 15vw;
+
+  /* css 017,  transform: rotateY(10deg);
+
    ⚡perspective & transform 3d
 
     To activate 3D space, an element needs perspective.
@@ -166,21 +178,6 @@ section {
    
    w2) 부모 태그와 나누어서  */
 
-  /* css 017
-   js 019
-  transform: rotateY(10deg);
- */
-
-  /* transform-origin: left;
-  https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin */
-  transform-origin: left;
-
-  box-shadow: 0.5rem 0.5rem 1rem #aaa; /* css 019 */
-}
-
-/* js 019  */
-section.change {
-  left: 15vw;
   transform: rotateY(10deg);
 }
 
